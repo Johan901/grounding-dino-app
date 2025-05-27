@@ -145,3 +145,11 @@ grounding/version.py
 
 vis/
 tmp/
+
+
+test.ipynb
+setup.py
+environment.yaml
+docker_test.py
+groundingdino
+demo
