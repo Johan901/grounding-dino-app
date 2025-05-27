@@ -147,9 +147,18 @@ vis/
 tmp/
 
 
+
+# Jupyter notebooks innecesarios
 test.ipynb
+
+# Configuración de instalación 
 setup.py
 environment.yaml
+
+# Script de prueba Docker
 docker_test.py
-groundingdino
-demo
+
+# Carpetas heredadas del repo original
+groundingdino/
+demo/
+.asset/
