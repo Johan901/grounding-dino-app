@@ -1,6 +1,6 @@
 # 🦕 Grounding DINO App – Sistema de Localización Visual Guiado por Texto
 
-Esta es una aplicación web interactiva construida con **Python** y **Streamlit**, que permite a los usuarios realizar tareas de *Visual Grounding* mediante el modelo **Grounding DINO**. Con esta app, cualquier persona puede subir una imagen, escribir una descripción en lenguaje natural (por ejemplo, "a red car"), y obtener la predicción visual del objeto indicado, destacado con cajas delimitadoras (bounding boxes).
+Esta es una aplicación web interactiva construida con **Python** y **Streamlit**, que permite a los usuarios realizar tareas de *Visual Grounding* mediante el modelo **Grounding DINO**. Además, la aplicación es completamente portable gracias a su contenedor Docker. Con esta app, cualquier persona puede subir una imagen, escribir una descripción en lenguaje natural (por ejemplo, "a red car"), y obtener la predicción visual del objeto indicado, destacado con cajas delimitadoras (bounding boxes).
 
 ---
 
@@ -101,6 +101,41 @@ streamlit run app.py
 
 ---
 
+
+---
+
+## 🐳 Ejecutar con Docker
+
+También puedes correr la aplicación en un contenedor Docker sin necesidad de instalar dependencias localmente.
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/Johan901/grounding-dino-app.git
+cd grounding-dino-app
+```
+
+### 2. Construir la imagen Docker
+
+```bash
+docker build -t grounding-dino-app .
+```
+
+### 3. Ejecutar el contenedor
+
+```bash
+docker run -p 8501:8501 grounding-dino-app
+```
+
+### 4. Acceder desde el navegador
+
+```
+http://localhost:8501
+```
+
+> Asegúrate de tener el archivo `groundingdino_swint_ogc.pth` dentro de la carpeta `weights/` antes de construir la imagen.
+
+
 ## 🧩 Estructura del Proyecto
 
 ```text
@@ -161,4 +196,3 @@ Para consultas, propuestas o colaboraciones:
 ---
 
 ¡Gracias por utilizar nuestra aplicación de Grounding DINO! Esperamos que este proyecto te sea útil para aprender, explorar y construir nuevas ideas con visión y lenguaje.
-
