@@ -1,0 +1,35 @@
+# Ignora configuraciones
+.vscode/
+.idea/
+
+# Entornos virtuales y caché
+env/
+venv/
+__pycache__/
+*.py[cod]
+
+# Notebooks
+*.ipynb
+
+# Imagenes basura o pruebas
+.asset/
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# Datos de pruebas
+tmp/
+outputs/
+logs/
+
+# Cosas de pruebas o desarrollo
+test.ipynb
+docker_test.py
+environment.yaml
+
+# Carpeta original
+demo/
+
+# Archivos de licencia si no los necesitas en producción
+LICENSE
